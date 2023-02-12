@@ -24,7 +24,7 @@ Principales tecnologias para el proyecto CompanyTory:
 
 # Diagrama de Clases
 
-![Captura de pantalla (982)](https://user-images.githubusercontent.com/42001590/216451131-1b189b36-0d8b-45be-9a96-47c4431a86ee.png)
+![Diagrama ER de base de datos (pata de gallo)](https://user-images.githubusercontent.com/42001590/218332217-d9b8fc73-9c91-44ce-b7ea-de36cc1132a5.png)
 
 ## Patrón de Arquitectura
 
