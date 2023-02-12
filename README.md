@@ -11,6 +11,10 @@ Principales tecnologias para el proyecto CompanyTory:
 * **Amazon SES**
 * **Amazon Cognito**
 
+# Demo
+
+![Captura de pantalla (989)](https://user-images.githubusercontent.com/42001590/218299478-d9a244bb-f8da-44ad-9dbf-3222389da496.png)
+
 
 ## Arquitectura
 
@@ -36,8 +40,3 @@ El patron utilizado para este proyecto es MVC ya que es un patrón en el diseño
 * **Etapa4:** Pruebas Unitarias
 * **Etapa5:** Integracion con el Back-End
 * **Etapa6:** Despliegue del proyecto
-
-# Demo
-
-![Captura de pantalla (985)](https://user-images.githubusercontent.com/42001590/216730710-6efac03e-4afc-42cf-bf38-479752e27276.png)
-
