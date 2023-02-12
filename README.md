@@ -32,11 +32,10 @@ Principales tecnologias para el proyecto CompanyTory:
 
 El patron utilizado para este proyecto es MVC ya que es un patrón en el diseño de software comúnmente utilizado para implementar interfaces de usuario, datos y lógica de control. Enfatiza una separación entre la lógica de negocios y su visualización. Esta "separación de preocupaciones" proporciona una mejor división del trabajo y una mejora de mantenimiento. 
 
-## Paso a Paso para levantamiento Del Componente
+## Amazon Web Services
 
-* **Etapa1:** Análisis de documentación, requerimientos y logica del proyecto.
-* **Etapa2:** Creacion del proyecto y instalacion de las diferentes librerias y dependencias, configuracion del proyecto.
-* **Etapa3:** Creacion de componentes, servicios y rutas.
-* **Etapa4:** Pruebas Unitarias
-* **Etapa5:** Integracion con el Back-End
-* **Etapa6:** Despliegue del proyecto
+* **1:** Amazon SES
+* **2:** AWS Lambda
+* **3:** Amazon DynamoDB
+* **4:** Amazon Cognito
+* **5:** Amazon S3
