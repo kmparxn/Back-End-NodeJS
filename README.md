@@ -1,15 +1,15 @@
-# [Node.js - Front-End - AWS](https://demo-two-psi.vercel.app/dashboard) &middot;  [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/facebook/react/blob/main/LICENSE) 
+# [Node.js - Back-End - AWS](https://demo-two-psi.vercel.app/dashboard) &middot;  [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/facebook/react/blob/main/LICENSE) 
 ### Prueba Técnica Revstar Colombia [(Demo)](https://demo-two-psi.vercel.app/dashboard)
 
 ## Stack Tecnologico
 
 Principales tecnologias para el proyecto CompanyTory:
 
-* **React:** 
-* **Material-UI** 
-* **RTK Query**
-* **Redux Toolkit**
-* **Styled-Components**
+* **JavaScript** 
+* **Node.js** 
+* **Amazon DynamoDB**
+* **Amazon SES**
+* **Amazon Cognito**
 
 
 ## Arquitectura
