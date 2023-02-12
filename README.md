@@ -22,7 +22,7 @@ Principales tecnologias para el proyecto CompanyTory:
 
 ![Captura de pantalla (982)](https://user-images.githubusercontent.com/42001590/216451131-1b189b36-0d8b-45be-9a96-47c4431a86ee.png)
 
-## Patrón en el diseño de software
+## Patrón de Arquitectura
 
 ### MVC 
 
