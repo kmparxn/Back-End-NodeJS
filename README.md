@@ -22,7 +22,7 @@ Principales tecnologias para el proyecto CompanyTory:
 
 ![architectureaws](https://user-images.githubusercontent.com/42001590/218298332-e5ab04de-10ae-45ee-9b49-70a2715c27c1.png)
 
-# Diagrama de Clases
+# Diagrama de Entidad-Relación
 
 ![Diagrama ER de base de datos (pata de gallo)(1)](https://user-images.githubusercontent.com/42001590/218332414-34d6faa8-c32b-4d2c-b43d-8ee6eb9e0ed4.png)
 
