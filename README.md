@@ -22,11 +22,11 @@ Principales tecnologias para el proyecto CompanyTory:
 
 ![Captura de pantalla (982)](https://user-images.githubusercontent.com/42001590/216451131-1b189b36-0d8b-45be-9a96-47c4431a86ee.png)
 
-## Patron de Diseño
+## Patrón en el diseño de software
 
-### Observer 
+### MVC 
 
-Observador es un patrón de diseño de software que define una dependencia del tipo uno a muchos entre objetos, de manera que cuando uno de los objetos cambia su estado, notifica este cambio a todos los dependientes. Se trata de un patrón de comportamiento (existen de tres tipos: creación, estructurales y de comportamiento), por lo que está relacionado con algoritmos de funcionamiento y asignación de responsabilidades a clases y objetos. 
+El patron utilizado para este proyecto es MVC ya que es un patrón en el diseño de software comúnmente utilizado para implementar interfaces de usuario, datos y lógica de control. Enfatiza una separación entre la lógica de negocios y su visualización. Esta "separación de preocupaciones" proporciona una mejor división del trabajo y una mejora de mantenimiento. 
 
 ## Paso a Paso para levantamiento Del Componente
 
