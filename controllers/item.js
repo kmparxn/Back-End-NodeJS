@@ -1,5 +1,5 @@
 const { matchedData } = require('express-validator');
-const {tracksModel} = require('../models')
+const {ItemsModel} = require('../models')
 const { handleHttpError } = require("../utils/handleError")
 /**
  * Obtener lista de la base de datos
@@ -8,11 +8,11 @@ const { handleHttpError } = require("../utils/handleError")
  */
 const getItems = async (req, res) =>{
     try {      
-        const data = await tracksModel.find({});
+        const data = await ItemsModel.find({});
         res.send({data})
         
     } catch (e) {
-        handleHttpError(res, "ERROR_GET_ITEMS")    
+        handleHttpError(res, "ERROR_GET_ItemS")    
     }
 };
 /**
@@ -24,11 +24,11 @@ const getItem = async (req, res) =>{
     try {
         req = matchedData(req);
         const {id} = req;
-        const data = await tracksModel.findById(id);
+        const data = await ItemsModel.findById(id);
         res.send({data});
         
     } catch (e) {
-        handleHttpError(res, "ERROR_GET_ITEM")
+        handleHttpError(res, "ERROR_GET_Item")
     }
 };
 /**
@@ -39,11 +39,11 @@ const getItem = async (req, res) =>{
 const createItem = async (req, res) =>{
     try {
         const body = matchedData(req)
-        const data = await tracksModel.create(body);
+        const data = await ItemsModel.create(body);
         res.send({data});
         
     } catch (e) {
-        handleHttpError(res, "ERROR_CREATE_ITEMS")      
+        handleHttpError(res, "ERROR_CREATE_ItemS")      
     }
 
 };
@@ -55,10 +55,10 @@ const createItem = async (req, res) =>{
 const updateItem = async (req, res) =>{
     try {
         const {id, ...body} = matchedData(req);
-        const data = await tracksModel.findOneAndUpdate(body);
+        const data = await ItemsModel.findOneAndUpdate(body);
         res.send({data});
     } catch (e) {
-        handleHttpError(res, "ERROR_CREATE_ITEMS");     
+        handleHttpError(res, "ERROR_CREATE_ItemS");     
     }
 };
 /**
@@ -70,11 +70,11 @@ const deleteItem = async (req, res) =>{
     try {
         req = matchedData(req);
         const {id} = req;
-        const data = await tracksModel.deleteOne({_id:id});
+        const data = await ItemsModel.deleteOne({_id:id});
         res.send({ data });
         
     } catch (e) {
-        handleHttpError(res, "ERROR_DELETE_ITEM")
+        handleHttpError(res, "ERROR_DELETE_Item")
         
     }
 

@@ -1,7 +1,7 @@
 require("dotenv").config()
 const express = require("express")
 const cors = require("cors")
-//const dbConnect = require('./config/mongo')
+const {dbConnectMySQL} = require('./config/mysql')
 const app = express()
 
 app.use(cors())
@@ -19,4 +19,4 @@ app.listen(port, () => {
     console.log(`http://localhost:${port}`)
 })
 
-//dbConnect()
+dbConnectMySQL()

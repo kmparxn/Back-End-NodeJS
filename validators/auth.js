@@ -1,17 +1,20 @@
 const {check} = require("express-validator");
 const { validateResult } = require("../utils/handleValidator");
     
-
 const validatorRegister = [
   check("name")
   .exists()
   .notEmpty()
-  .isLength({min:3, max:99}),
-  check("age")
+  .isLength({min:3, max:30}),
+  check("lastName")
   .exists()
   .notEmpty()
-  .isNumeric(),
+  .isLength({min:3, max:30}),
   check("password")
+  .exists()
+  .notEmpty()
+  .isLength({min:3, max:15}),
+  check("userName")
   .exists()
   .notEmpty()
   .isLength({min:3, max:15}),
