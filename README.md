@@ -3,7 +3,7 @@
 
 ## Stack Tecnologico
 
-Principales tecnologias para el proyecto CompanyTory:
+Main technologies for the CompanyTory project.
 
 * **JavaScript** 
 * **Node.js** 
@@ -15,7 +15,7 @@ Principales tecnologias para el proyecto CompanyTory:
 ![Captura de pantalla (989)](https://user-images.githubusercontent.com/42001590/218299478-d9a244bb-f8da-44ad-9dbf-3222389da496.png)
 
 
-## Arquitectura
+## Architecture
 
 ### Solution Architecture Diagram (Based on Amazon Web Services).
 
