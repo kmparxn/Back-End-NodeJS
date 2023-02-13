@@ -7,9 +7,8 @@ Principales tecnologias para el proyecto CompanyTory:
 
 * **JavaScript** 
 * **Node.js** 
-* **Amazon DynamoDB**
-* **Amazon SES**
-* **Amazon Cognito**
+* **MySQL** 
+* **Amazon Web Services**
 
 # Demo
 
