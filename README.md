@@ -29,7 +29,7 @@ Principales tecnologias para el proyecto CompanyTory:
 
 ### serverless 
 
-El patron utilizado para este proyecto es MVC ya que es un patrón en el diseño de software comúnmente utilizado para implementar interfaces de usuario, datos y lógica de control. Enfatiza una separación entre la lógica de negocios y su visualización. Esta "separación de preocupaciones" proporciona una mejor división del trabajo y una mejora de mantenimiento. 
+Serverless computing enables developers to build applications faster by eliminating the need for them to manage infrastructure. With serverless applications, the cloud service provider automatically provisions, scales, and manages the infrastructure required to run the code.
 
 ## Amazon Web Services
 
