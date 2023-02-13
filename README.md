@@ -17,11 +17,11 @@ Principales tecnologias para el proyecto CompanyTory:
 
 ## Arquitectura
 
-### Diagrama de arquitectura de la solución (Basada en Amazon Web Services). 
+### Solution Architecture Diagram (Based on Amazon Web Services).
 
 ![architecture](https://user-images.githubusercontent.com/42001590/218430331-786b8be2-c6b3-4ea3-9ad5-7fef812de730.png)
 
-# Diagrama de Entidad-Relación
+# Entity Relationship Diagram
 
 ![Diagrama ER de base de datos (pata de gallo)(1)](https://user-images.githubusercontent.com/42001590/218332414-34d6faa8-c32b-4d2c-b43d-8ee6eb9e0ed4.png)
 
