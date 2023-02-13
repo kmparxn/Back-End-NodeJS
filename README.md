@@ -25,9 +25,9 @@ Principales tecnologias para el proyecto CompanyTory:
 
 ![Diagrama ER de base de datos (pata de gallo)(1)](https://user-images.githubusercontent.com/42001590/218332414-34d6faa8-c32b-4d2c-b43d-8ee6eb9e0ed4.png)
 
-## Patrón de diseño (RESTful API)
+## Why use serverless architectures?
 
-### MVC 
+### serverless 
 
 El patron utilizado para este proyecto es MVC ya que es un patrón en el diseño de software comúnmente utilizado para implementar interfaces de usuario, datos y lógica de control. Enfatiza una separación entre la lógica de negocios y su visualización. Esta "separación de preocupaciones" proporciona una mejor división del trabajo y una mejora de mantenimiento. 
 
