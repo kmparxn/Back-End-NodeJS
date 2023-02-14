@@ -1,6 +1,6 @@
 const {sequelize} = require("../../config/mysql");
 const {DataTypes} = require("sequelize");
-const {Item} = require("./items");
+const Item = require("./items");
 const Company = sequelize.define(
     'Company',
     {
@@ -28,5 +28,7 @@ const Company = sequelize.define(
     }
 );
 
+Company.hasMany(Item);
+Item.belongsTo(Company);
 
 module.exports = Company;

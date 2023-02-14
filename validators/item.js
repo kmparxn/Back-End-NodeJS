@@ -1,5 +1,5 @@
 const { check } = require("express-validator");
-const validateResults = require("../utils/handleValidator")
+const {validateResults} = require("../utils/handleValidator")
 
 const validatorCreateItem = [
     check("date")
@@ -12,6 +12,9 @@ const validatorCreateItem = [
     .exists()
     .notEmpty(),
     check("price")
+    .exists()
+    .notEmpty(),
+    check("CompanyNit")
     .exists()
     .notEmpty(),
     (req, res, next) => {
@@ -42,6 +45,9 @@ const validatorUpdateItem = [
     .exists()
     .notEmpty(),
     check("price")
+    .exists()
+    .notEmpty(),
+    check("CompanyNit")
     .exists()
     .notEmpty(),
     (req, res, next) => {

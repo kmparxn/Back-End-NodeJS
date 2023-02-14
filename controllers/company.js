@@ -1,5 +1,6 @@
 const { matchedData } = require('express-validator');
-const {companiesModel} = require('../models')
+const {companiesModel} = require('../models');
+const Item = require('../models/sql/items');
 const { handleHttpError } = require("../utils/handleError")
 /**
  * Obtener lista de la base de datos
@@ -8,7 +9,7 @@ const { handleHttpError } = require("../utils/handleError")
  */
 const getCompanies = async (req, res) =>{
     try {      
-        const data = await companiesModel.find({});
+        const data = await companiesModel.findAll({ include: Item });
         res.send({data})
         
     } catch (e) {
@@ -24,7 +25,7 @@ const getCompany = async (req, res) =>{
     try {
         req = matchedData(req);
         const {id} = req;
-        const data = await companiesModel.findById(id);
+        const data = await companiesModel.findByPk(id);
         res.send({data});
         
     } catch (e) {
@@ -55,7 +56,7 @@ const createCompany = async (req, res) =>{
 const updateCompany = async (req, res) =>{
     try {
         const {id, ...body} = matchedData(req);
-        const data = await companiesModel.findOneAndUpdate(body);
+        const data = await companiesModel.update(body, { where: { nit: id } });
         res.send({data});
     } catch (e) {
         handleHttpError(res, "ERROR_CREATE_CompanyS");     
@@ -70,7 +71,11 @@ const deleteCompany = async (req, res) =>{
     try {
         req = matchedData(req);
         const {id} = req;
-        const data = await companiesModel.deleteOne({_id:id});
+        const data = await companiesModel.destroy({
+            where: {
+              id: id
+            }
+          });
         res.send({ data });
         
     } catch (e) {

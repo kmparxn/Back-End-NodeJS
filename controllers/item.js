@@ -1,5 +1,5 @@
 const { matchedData } = require('express-validator');
-const {ItemsModel} = require('../models')
+const {itemsModel} = require('../models')
 const { handleHttpError } = require("../utils/handleError")
 /**
  * Obtener lista de la base de datos
@@ -8,7 +8,7 @@ const { handleHttpError } = require("../utils/handleError")
  */
 const getItems = async (req, res) =>{
     try {      
-        const data = await ItemsModel.find({});
+        const data = await itemsModel.findAll();
         res.send({data})
         
     } catch (e) {
@@ -24,7 +24,7 @@ const getItem = async (req, res) =>{
     try {
         req = matchedData(req);
         const {id} = req;
-        const data = await ItemsModel.findById(id);
+        const data = await itemsModel.findByPk();
         res.send({data});
         
     } catch (e) {
@@ -39,7 +39,7 @@ const getItem = async (req, res) =>{
 const createItem = async (req, res) =>{
     try {
         const body = matchedData(req)
-        const data = await ItemsModel.create(body);
+        const data = await itemsModel.create(body);
         res.send({data});
         
     } catch (e) {
@@ -55,7 +55,7 @@ const createItem = async (req, res) =>{
 const updateItem = async (req, res) =>{
     try {
         const {id, ...body} = matchedData(req);
-        const data = await ItemsModel.findOneAndUpdate(body);
+        const data = await itemsModel.update(body, { where: { id: id } });
         res.send({data});
     } catch (e) {
         handleHttpError(res, "ERROR_CREATE_ItemS");     
@@ -70,7 +70,11 @@ const deleteItem = async (req, res) =>{
     try {
         req = matchedData(req);
         const {id} = req;
-        const data = await ItemsModel.deleteOne({_id:id});
+        const data = await itemsModel.destroy({
+            where: {
+              id: id
+            }
+          });
         res.send({ data });
         
     } catch (e) {
