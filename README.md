@@ -9,6 +9,8 @@ Main technologies for the CompanyTory project.
 * **Node.js** 
 * **MySQL** 
 * **Amazon Web Services**
+* **Nodemailer** 
+
 
 # Demo
 
